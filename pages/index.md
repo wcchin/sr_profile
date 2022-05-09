@@ -1,88 +1,81 @@
-# About Me
-## Personal Info
-<span class="mu mu-right"></span>
+# Profile
 
-<div class="row">
-<div class="three columns">
-	A photo
-</div>
-<div class="nine columns">
-
-| Name        | Wei Chien Benny Chin                                      |
-| ----------- | --------------------------------------------------------- |
-| Specialty   | GIS, Spatial Analysis, Network Analysis                   |
-| Skills      | Python, GIS                                               |
-| Education   | Ph.D. from Geography, Nationtal Taiwan University, Taiwan |
-| Work        | Research Fellow at Geography, NUS, Singapore              |
-| Email       | wcchin[at]nus[dot]edu[dot]sg                              |
-
-</div>
-</div>
-	
-## Short Bio
-
-<span class="mu mu-right"></span>
+## <span class="mu mu-right"></span> Short Bio
 
 Wei Chien Benny Chin is a Malaysian who holds a Taiwanese Ph.D. degree in geography and currently works in Singapore as a postdoctoral research fellow. He is a geographical information scientist. His research interests include computational geography, complex network, spatial scaling, and space-time patterns. He is participating in projects associated with complex human movement networks and spatial epidemiology.
 
+## <span class="mu mu-right"></span> Personal Info
 
-## Education
+<div class="row">
+<div class="four columns">
 
-<span class="mu mu-right"></span>
+<img src="/resources/images/benny.jpg" style="width: 250px; height: 337px; object-fit: cover; object-position: 0 0;">
 
-<table class="u-full-width">
-	<thead>
-		<tr>
-			<th>Degree</th>
-			<th>Year</th>
-			<th>University</th>
-			<th>Department</th>
-			<th>Topic</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Ph.D.</td>
-			<td>2014-2018</td>
-			<td>NTU Taiwan</td>
-			<td>Geography</td>
-			<td>Scaling of point pattern</td>
-		</tr>
-		<tr>
-			<td>Master</td>
-			<td>2011-2013</td>
-			<td>NTU Taiwan</td>
-			<td>Geography</td>
-			<td>Important nodes in a spatial network</td>
-		</tr>
-		<tr>
-			<td>Bachelor</td>
-			<td>2007-2011</td>
-			<td>NTU Taiwan</td>
-			<td>Geography</td>
-			<td>Spatial health quality analysis</td>
-		</tr>
-	</tbody>
-</table>
+</div>
+<div class="eight columns">
 
-## Work Experience
+|      Name | Wei Chien Benny CHIN                                                             |
+|----------:|----------------------------------------------------------------------------------|
+| Education | Ph.D. from Geography, Nationtal Taiwan University, Taiwan                        |
+|      Work | Research Fellow at Geography, NUS, Singapore                                     |
+| Specialty | GIS, Geocomputation, Spatial & Temporal Analysis, Network Analysis, Data Science |
+|    Skills | GIS, Linux, Python, JS                                                           |
+|   Contact | wcchin[at]nus[dot]edu[dot]sg                                                     |
 
-<span class="mu mu-right"></span>
+</div>
+</div>
 
-Lorem ipsum You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation). You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation). You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation).
 
-You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation).
-You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation).
+# Experiences
+## <span class="mu mu-right"></span> Work
 
-You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation).
-You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation).
+|       Year       | Position            | Department                         | Topics                                                  |
+|:----------------:|---------------------|------------------------------------|---------------------------------------------------------|
+| **2022-Current** | **Research Fellow** | **GIS, Geography, NUS, Singapore** | **Health Geography and spatial vulnerability analysis** |
+|     2021-2022    | Research Fellow     | AAL/SUMRL, Cities, SUTD, Singapore | Human dynamics and urban vibrancy analysis              |
+|     2019-2020    | Research Fellow     | ACG, Cities, SUTD, Singapore       | Vertical displacement analysis                          |
+|       2018       | Research Fellow     | Wenlab, Geography, NTU, Taiwan     | Health Geography and spatial structure analysis         |
+|     2013-2014    | Research Assistant  | Wenlab, Geography, NTU, Taiwan     | Spatial data processing & visualization                 |
 
-You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation).You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation).You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of which is the docking navigation).
 
+## <span class="mu mu-right"></span> Education
+
+| Degree   | Year      | University | Department | Topic                                |
+|----------|-----------|------------|------------|--------------------------------------|
+| Ph.D.    | 2014-2018 | NTU Taiwan | Geography  | Scaling of point pattern             |
+| Master   | 2011-2013 | NTU Taiwan | Geography  | Important nodes in a spatial network |
+| Bachelor | 2007-2011 | NTU Taiwan | Geography  | Spatial health quality analysis      |
 
 
 # Publications
 
+## <span class="mu mu-right"></span> Statistics
+
+<div class="row">
+<div class="one column"></div>
+<div class="ten columns">
+<canvas id="publicationByYear" style="width:100% height:200px"></canvas>
+</div>
+<div class="one column"></div>
+</div>
+<div class="row" style="padding-top: 20px"></div>
+<div class="row">
+<div class="one column"></div>
+<div class="ten columns">
+<canvas id="citationByYear" style="width:100% height:200px"></canvas>
+</div>
+<div class="one column"></div>
+</div>
+
+## <span class="mu mu-right"></span> List
+
+<div class="row">
 <input type="text" class="bibtex_search" id="searchbar" placeholder="Search publications">
+</div>
 
 <div id="bibtex_display"></div>
+
+
+# Other
+
+

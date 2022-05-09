@@ -5,7 +5,7 @@ var config = {
 	description: 'I am a GIScientist',
 	keywords: ['GIS', 'Geographer', 'Researcher'], 
 	markdown_file: "pages/index.md",
-	bibtex: "./my_publications.bib", 
+	bibtex: "./resources/my_publications.bib", 
 };
 
 

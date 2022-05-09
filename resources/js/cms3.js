@@ -16,6 +16,7 @@ function loadMarkDown(file, isHome) {
     if (xhr.readyState == 4 && xhr.status == 200) {
 			let mdText = xhr.responseText;
 			let htmlText = md.render(mdText);
+      htmlText = htmlText.replaceAll("<table>", '<table class="u-full-width">');
 			$("#tab-location").html(htmlText);
 			
 			$( "h1" ).each(function( index ) {
@@ -44,6 +45,7 @@ function loadMarkDown(file, isHome) {
 				} else {
 					$("#"+parSec+"_navitem > a").attr("href", "#").attr('onclick', "openingPopover(this)");
 					$("#"+parSec+"_navitem > a").removeAttr("href");//.removeAttr("onclick");
+          $("#"+parSec+"_navitem > a").html($("#"+parSec+"_navitem > a").text()+'&nbsp;<span class="mu mu-down"></span>');
 					let subdiv = $("<div>", {id: "sub"+parSec.replaceAll(" ","_"), class: "popover", });
 					let ulist = $("<ul>", {class: "popover-list", id: "sub_"+parSec.replaceAll(" ","_")});
 					let parlink = $('<a>', {class: "popover-link", id: "#"+parSec.replaceAll(" ","_"), text: parSec, onclick: "moveto(this)"});
@@ -104,7 +106,7 @@ function moveto(e) {
 	closePopover();
 }
 
-function changeTitle(config, callback) {
+function changeTitle(config, callback, callback2) {
 	window.top.document.title = config["site_title"];
 	$("meta[name='title']").attr('content', config["site_title"]);
 	$("meta[name='keywords']").attr('content', config["keywords"]);
@@ -119,12 +121,17 @@ function changeTitle(config, callback) {
 		let scriptEle = $("<script></script>").attr("src", "resources/js/bibtex_js.js");
 		$("body").append(scriptEle); 
 	};
-	callback(config);
+  //let scriptEle = $("<script></script>").attr("src", "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js");
+  //$("body").append(scriptEle); 
+  
+	callback(config, callback2);
 }
 
-function loadingFiles(config) {
+function loadingFiles(config, callback2) {
 	let file = config["markdown_file"];
-	let loaded = loadMarkDown(file);
+	loaded = loadMarkDown(file);
+  
+	callback2();
 }
 /*
 function init_site() {
@@ -148,9 +155,191 @@ function init_site() {
 	$(window).on('resize', resize);
 }*/
 
+function draw_Fig1(canvas) {
+  const data = {
+    labels: publicationByYear["year"],
+    datasets: [{
+      label: 'Article',
+      backgroundColor: publicationByYear["color"]["article"],
+      borderColor: publicationByYear["color"]["article"],
+      data: publicationByYear["article"],
+    }, {
+      label: 'Book Chapter',
+      backgroundColor: publicationByYear["color"]["bookchapter"],
+      borderColor: publicationByYear["color"]["bookchapter"],
+      data: publicationByYear["bookchapter"],
+    }, {
+      label: 'Other',
+      backgroundColor: publicationByYear["color"]["other"],
+      borderColor: publicationByYear["color"]["other"],
+      data: publicationByYear["other"],
+    }, 
+    ]
+  };
+
+  const thisconfig = {
+    type: 'bar',
+    data: data,
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: "Publications by year",
+          font: {
+              family: 'Quicksand',
+              size: 20,
+              weight: 'bold',
+              lineHeight: 1.2
+          },
+        }
+      }, 
+      scales: {
+        x: {
+          stacked: true,
+          title: {
+            display: true,
+            text: 'Year',
+            font: {
+              family: 'Quicksand',
+              size: 16,
+              weight: 'bold',
+              lineHeight: 1.2,
+            },
+            padding: {top: 20, left: 0, right: 0, bottom: 0}
+          }
+        },
+        y: {
+          beginAtZero: true,
+          stacked: true,
+          min: 0,
+          max: 5,
+          ticks: {stepSize: 1},
+          title: {
+            display: true,
+            text: 'Count',
+            font: {
+              family: 'Quicksand',
+              size: 16,
+              weight: 'bold',
+              lineHeight: 1.2
+            },
+            padding: {top: 30, left: 0, right: 0, bottom: 0}
+          }
+        }
+      },
+    }
+  };
+  
+  const myChart = new Chart(
+    canvas,
+    thisconfig
+  );
+}
+
+function draw_Fig2(canvas) {
+  const data = {
+    labels: citationByYear["year"],
+    datasets: [{
+      //label: 'Article',
+      backgroundColor: citationByYear["color"],
+      borderColor: citationByYear["color"],
+      data: citationByYear["cite"],
+    }
+    ]
+  };
+
+  const thisconfig = {
+    type: 'bar',
+    data: data,
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: "Citation by year",
+          font: {
+              family: 'Quicksand',
+              size: 20,
+              weight: 'bold',
+              lineHeight: 1.2
+          },
+        }, 
+        legend: {display: false}
+      }, 
+      scales: {
+        x: {
+          stacked: true,
+          title: {
+            display: true,
+            text: 'Year',
+            font: {
+              family: 'Quicksand',
+              size: 16,
+              weight: 'bold',
+              lineHeight: 1.2,
+            },
+            padding: {top: 20, left: 0, right: 0, bottom: 0}
+          }
+        },
+        y: {
+          beginAtZero: true,
+          stacked: true,
+          min: 0,
+          max: 40,
+          ticks: {stepSize: 10},
+          title: {
+            display: true,
+            text: 'Count',
+            font: {
+              family: 'Quicksand',
+              size: 16,
+              weight: 'bold',
+              lineHeight: 1.2
+            },
+            padding: {top: 30, left: 0, right: 0, bottom: 0}
+          }
+        }
+      },
+    }
+  };
+  
+  const myChart = new Chart(
+    canvas,
+    thisconfig
+  );
+}
+
+// when the document has loaded, start polling
+$(window).load(function () {
+  (function () {
+    var canvas = $('canvas#publicationByYear');
+    if (canvas) {
+      draw_Fig1(canvas);
+    }
+    else {
+      setTimeout(arguments.callee, 50); // call myself again in 50 msecs
+    }
+  }());
+  (function () {
+    var canvas = $('canvas#citationByYear');
+    if (canvas) {
+      draw_Fig2(canvas);
+    }
+    else {
+      setTimeout(arguments.callee, 50); // call myself again in 50 msecs
+    }
+  }());
+});
+
+
+function postProcessing() {
+  
+  console.log(2);
+
+}
+
 //document.addEventListener('DOMContentLoaded', function(event) {
 $(document).ready(function() {
   //the event occurred
-	changeTitle(config, loadingFiles);
+	changeTitle(config, loadingFiles, postProcessing);
 	//init_site();
 })
