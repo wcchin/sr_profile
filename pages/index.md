@@ -29,13 +29,13 @@ Wei Chien Benny Chin is a Malaysian who holds a Taiwanese Ph.D. degree in geogra
 # Experiences
 ## <span class="mu mu-right"></span> Work
 
-|       Year       | Position            | Department                         | Topics                                                  |
-|:----------------:|---------------------|------------------------------------|---------------------------------------------------------|
-| **2022-Current** | **Research Fellow** | **GIS, Geography, NUS, Singapore** | **Health Geography and spatial vulnerability analysis** |
-|     2021-2022    | Research Fellow     | AAL/SUMRL, Cities, SUTD, Singapore | Human dynamics and urban vibrancy analysis              |
-|     2019-2020    | Research Fellow     | ACG, Cities, SUTD, Singapore       | Vertical displacement analysis                          |
-|       2018       | Research Fellow     | Wenlab, Geography, NTU, Taiwan     | Health Geography and spatial structure analysis         |
-|     2013-2014    | Research Assistant  | Wenlab, Geography, NTU, Taiwan     | Spatial data processing & visualization                 |
+|       Year       | Position            | Department                             | Topics                                                  |
+|:----------------:|---------------------|----------------------------------------|---------------------------------------------------------|
+| **2022-Current** | **Research Fellow** | **GIS, Geography, <br>NUS, Singapore** | **Health Geography and spatial vulnerability analysis** |
+|     2021-2022    | Research Fellow     | AAL/SUMRL, Cities, <br>SUTD, Singapore | Human dynamics and urban vibrancy analysis              |
+|     2019-2020    | Research Fellow     | ACG, Cities, <br>SUTD, Singapore       | Vertical displacement analysis                          |
+|       2018       | Research Fellow     | Wenlab, Geography, <br>NTU, Taiwan     | Health Geography and spatial structure analysis         |
+|     2013-2014    | Research Assistant  | Wenlab, Geography, <br>NTU, Taiwan     | Spatial data processing & visualization                 |
 
 
 ## <span class="mu mu-right"></span> Education
