@@ -53,9 +53,33 @@
 		</nav>
 		<div class="tab-content" id="tab-location">
 		</div>
-		
   </div>
 
+  <div class="bibtex_template">
+    <div class="if author" style="font-weight: bold;">
+      <span class="if year">
+        <span class="year"></span>, 
+      </span>
+      <span class="author"></span>.
+    </div>
+    <div style="margin-left: 20px; margin-bottom:5px;">
+      <span class="title"></span>.<br>
+      <span class="if journal"><i><span class="journal"></span></i></span>
+      <span class="if booktitle">In <i><span class="booktitle"></span></i></span>
+      <span class="if BIBTEXTYPEKEY==PHDTHESIS">Ph.D. Dissertation <strong><span class="school"></span></strong></span>
+      <span class="if BIBTEXTYPEKEY==MASTERSTHESIS">Master Thesis <strong><span class="school"></span></strong></span>
+      <span class="if volume" style="font-style: italic;">
+        <span class="volume"></span>
+        <span class="if number" style="font-style: italic;">(<span class="number"></span>)</span>,&nbsp
+        <span class="if pages">
+          <span class="pages"></span>.&nbsp
+        </span>
+      </span>
+      <span class="if doi" style="margin-left: 10px">
+        <a class="doi" style="color:black; font-size:16px"><i class="ai ai-doi ai-1x"></i></a>
+      </span>
+    </div>
+  </div>
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
