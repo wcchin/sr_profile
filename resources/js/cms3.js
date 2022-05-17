@@ -205,7 +205,7 @@ function draw_Fig1(canvas) {
               weight: 'bold',
               lineHeight: 1.2,
             },
-            padding: {top: 20, left: 0, right: 0, bottom: 0}
+            padding: {top: 10, left: 0, right: 0, bottom: 0}
           }
         },
         y: {

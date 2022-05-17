@@ -54,7 +54,7 @@ Wei Chien Benny Chin is a Malaysian who holds a Taiwanese Ph.D. degree in geogra
 <div class="row">
 <div class="one column"></div>
 <div class="ten columns">
-<canvas id="publicationByYear" style="width:100% height:200px"></canvas>
+<canvas id="publicationByYear" style="width:100% height:400px"></canvas>
 </div>
 <div class="one column"></div>
 </div>
