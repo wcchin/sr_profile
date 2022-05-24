@@ -21,6 +21,7 @@ Wei Chien Benny Chin is a Malaysian who holds a Taiwanese Ph.D. degree in geogra
 | Specialty | GIS, Geocomputation, Spatial & Temporal Analysis, Network Analysis, Data Science |
 |    Skills | GIS, Linux, Python, JS                                                           |
 |   Contact | wcchin[at]nus[dot]edu[dot]sg                                                     |
+|    Social | <a href="https://orcid.org/0000-0001-7215-3303"><i class="ai ai-orcid"></i></a>  <a href="https://www.scopus.com/authid/detail.uri?authorId=56596201400"><i class="ai ai-scopus"></i></a>  <a href="https://scholar.google.com/citations?hl=zh-TW&user=P2IJvyQAAAAJ"><i class="ai ai-google-scholar"></i></a>  <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4909051"><i class="ai ai-ssrn"></i></a>  <a href="https://www.researchgate.net/profile/Benny_Chin"><i class="ai ai-researchgate"></i></a>  |
 
 </div>
 </div>
