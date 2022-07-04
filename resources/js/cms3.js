@@ -308,33 +308,37 @@ function draw_Fig2(canvas) {
   );
 }
 
+function waitForElm(selector) {
+  return new Promise(resolve => {
+    if (document.querySelector(selector)) {
+      return resolve(document.querySelector(selector));
+    }
+    const observer = new MutationObserver(mutations => {
+    if (document.querySelector(selector)) {
+      resolve(document.querySelector(selector));
+      observer.disconnect();
+      }
+    });
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  });
+}
+
 // when the document has loaded, start polling
 $(window).load(function () {
-  (function () {
-    var canvas = $('canvas#publicationByYear');
-    if (canvas) {
-      draw_Fig1(canvas);
-    }
-    else {
-      setTimeout(arguments.callee, 50); // call myself again in 50 msecs
-    }
-  }());
-  (function () {
-    var canvas = $('canvas#citationByYear');
-    if (canvas) {
-      draw_Fig2(canvas);
-    }
-    else {
-      setTimeout(arguments.callee, 50); // call myself again in 50 msecs
-    }
-  }());
+  waitForElm('#publicationByYear').then((canvas) => {
+    draw_Fig1(canvas);
+  });
+  waitForElm('#citationByYear').then((canvas) => {
+    draw_Fig2(canvas);
+  });
 });
 
 
 function postProcessing() {
-  
   console.log(2);
-
 }
 
 //document.addEventListener('DOMContentLoaded', function(event) {

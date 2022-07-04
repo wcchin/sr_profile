@@ -70,13 +70,11 @@ Wei Chien Benny Chin is a Malaysian who holds a Taiwanese Ph.D. degree in geogra
 
 ## <span class="mu mu-right"></span> List
 
-<div class="row">
+<div class="row" align="justify">
 <input type="text" class="bibtex_search" id="searchbar" placeholder="Search publications">
 </div>
 
-<div id="bibtex_display"></div>
+<div id="bibtex_display" align="justify"></div>
 
-
-# Other
-
+-----
 
